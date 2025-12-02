@@ -90,7 +90,6 @@ python main.py --model BKCP
 python main.py --model PMF          # Probabilistic Matrix Factorization
 python main.py --model BTMF         # Bayesian Temporal MF
 python main.py --model BTRMF        # Bayesian Temporal Regularized MF
-python main.py --model TRMF         # Temporal Regularized MF
 python main.py --model PPCA         # Probabilistic PCA
 python main.py --model MVN_EM       # Multivariate Normal EM
 python main.py --model ProbKNN      # Probabilistic KNN
