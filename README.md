@@ -114,7 +114,6 @@ python main.py --viz_gt
 | **Matrix Factorization** | **PMF** | Probabilistic Matrix Factorization with Gaussian priors. |
 | | **BTMF** | Bayesian Temporal Matrix Factorization (Vector Autoregressive priors). |
 | | **BTRMF** | Bayesian Temporal Regularized MF (Element-wise AR priors). |
-| | **TRMF** | Temporal Regularized MF (Regularized optimization). |
 | **Statistical / Classical** | **PPCA** | Probabilistic PCA solved via EM algorithm. |
 | | **MVN\_EM** | Multivariate Normal imputation (Time-only covariance). |
 | | **ProbKNN** | Probabilistic K-Nearest Neighbors (Local weighted averaging). |
