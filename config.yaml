@@ -1,0 +1,65 @@
+# config.yaml
+
+data:
+  path: "./MODIS_Aug.mat"
+  val_ratio: 0.1
+  seed: 1000
+
+train:
+  burn_in: 50
+  gibbs_iter: 100
+  verbose_step: 10
+  tensor_max_iter: 100
+  tensor_tol: 1e-4
+
+
+# --- 1. BTMF ---
+BTMF:
+  rank: 15        
+  time_lags: [1, 2]
+
+# --- 2. BTRMF ---
+BTRMF:
+  rank: 15        
+  time_lags: [1, 2, 7] 
+
+
+# --- 4. PMF (Baseline) ---
+PMF:
+  rank: 15      
+
+
+
+BKCP:
+  rank: 20
+  length_scale: [3.5, 4.3, 7.5]
+
+
+# Probabilistic KNN Baseline
+ProbKNN:
+  rank: 0 
+  n_neighbors: 50
+  time_scale: 1.0
+
+
+Prob3DMAE:
+  dist_type: 'SkewNormal'  # Options: Normal, SkewNormal, SGED, JohnsonSU
+  mask_ratio: [0.1, 0.3]
+  learning_rate: 0.001
+  epochs: 5000
+  patience: 50
+  kernel_size: [5, 9, 9]
+  rank: 0                
+
+
+# Multivariate Normal EM
+MVN_EM:
+  rank: 0 
+  max_iter: 50
+  tol: 1e-4
+
+# Probabilistic PCA
+PPCA:
+  rank: 10
+  max_iter: 100
+  tol: 1e-4
