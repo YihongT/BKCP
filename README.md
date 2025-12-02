@@ -1,4 +1,4 @@
-# Bayesian Kernelized CP for Spatiotemporal Imputation
+# Bayesian Kernelized CP for Tensor Imputation
 
 This project implements a probabilistic tensor factorization framework, **Bayesian Kernelized CP (BKCP)**, for spatiotemporal data imputation. It is designed to reconstruct missing values in environmental datasets (e.g., MODIS Land Surface Temperature) while providing calibrated uncertainty estimates.
 
