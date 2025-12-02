@@ -41,8 +41,8 @@ The framework supports a wide range of metrics to evaluate both point estimation
 1.  Clone the repository:
 
     ```bash
-    git clone <your-repo-url>
-    cd <your-repo-name>
+    git clone https://github.com/YihongT/BKCP
+    cd BKCP
     ```
 
 2.  Create a virtual environment (optional but recommended):
